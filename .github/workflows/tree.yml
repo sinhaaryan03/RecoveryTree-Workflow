@@ -38,7 +38,7 @@ jobs:
        
        - name: Upload tree
          run: |
-              cd work/input
+              cd work/input/working
               zip -r tree.zip *
               touch link.txt
               ./transfer wet tree.zip | grep Download >> link.txt
