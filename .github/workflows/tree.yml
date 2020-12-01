@@ -38,11 +38,11 @@ jobs:
        
        - name: Upload tree
          run: |
-              cd work/working/realme/RMX2185
+              cd work/input
               zip -r tree.zip *
               touch link.txt
               ./transfer wet tree.zip | grep Download >> link.txt
        
        - name: Execute Shell Script
          run: |
-               cat work/working/realme/RMX2185link.txt
+               cat work/input/link.txt
